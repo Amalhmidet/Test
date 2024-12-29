@@ -6,6 +6,7 @@ import 'package:testt/viewmodels/onboarding_viewm.dart';
 class OnboardingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     final viewModel = Provider.of<OnboardingViewModel>(context);
 
     return Scaffold(
@@ -14,7 +15,6 @@ class OnboardingView extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Column(
             children: [
-              // Espace en haut
               SizedBox(height: 50),
               // Image et cercle
               Stack(
@@ -22,23 +22,23 @@ class OnboardingView extends StatelessWidget {
                 children: [
                   // Cercle avec taille personnalisée
                   Positioned(
-                     top: 296, // Déviation Y = 296
-                     left: 56, // Déviation X = 56t
+                     top: 180, 
+                     left: 30, 
                     child: Container(
                       height: 188,
                       width: 188,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Color(0xFFE14B5A), // Couleur du cercle
+                        color: Color(0xFFE14B5A), 
                       ),
                     ),
                   ),
                   // Image centrée
                   ClipOval(
                     child: Image.asset(
-                      'assets/image1.png', // Remplacez par votre image
+                      'assets/image1.png', 
                       fit: BoxFit.cover,
-                      width: 598, // Taille de l'image
+                      width: 598,
                       height: 398,
                     ),
                   ),
@@ -77,7 +77,7 @@ class OnboardingView extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF4E74F9), // Couleur bleue
+                  backgroundColor: Color(0xFF4E74F9), 
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
                   ),

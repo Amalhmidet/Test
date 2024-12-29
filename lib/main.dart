@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testt/viewmodels/notification_viewm.dart';
 import 'package:testt/viewmodels/onboarding_viewm.dart';
 import 'package:testt/views/OnboardingView.dart';
 import 'package:provider/provider.dart';
@@ -8,6 +9,7 @@ void main() {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => OnboardingViewModel()),
+        ChangeNotifierProvider(create: (_) => NotificationViewModel()),
       ],
       child: MyApp(),
     ),

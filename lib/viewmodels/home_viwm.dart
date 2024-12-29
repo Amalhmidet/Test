@@ -22,16 +22,16 @@ class CategoriesViewModel {
       imageUrl: "assets/image6.png",
       courseCount: 18,
     ),
-    // Ajouter un nom et un nombre de cours pour les catégories suivantes
+    
     Category(
-      name: "Physics", // Par défaut si aucun nom n'était spécifié
+      name: "Physics", 
       imageUrl: "assets/image7.png",
-      courseCount: 10, // Valeur par défaut
+      courseCount: 10, 
     ),
     Category(
-      name: "Chemistry", // Par défaut
+      name: "Chemistry", 
       imageUrl: "assets/image8.png",
-      courseCount: 12, // Valeur par défaut
+      courseCount: 12, 
     ),
   ];
 }

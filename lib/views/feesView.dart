@@ -21,7 +21,6 @@ class FeesView extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            // Contenu principal au-dessus de l'image
             Padding(
               padding: const EdgeInsets.all(25.15),
               child: Column(
@@ -35,10 +34,9 @@ class FeesView extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 32, fontWeight: FontWeight.bold),
                       ),
-                      // Bouton "Skip"
                       TextButton(
                         onPressed: () {
-                          // Action du bouton "Skip"
+                          
                         },
                         child: Text(
                           "Skip",
@@ -53,10 +51,8 @@ class FeesView extends StatelessWidget {
                     style: TextStyle(fontSize: 16, color: Colors.grey[700]),
                   ),
                   Spacer(),
-                  // Bouton "Next"
                  ElevatedButton(
                     onPressed: () {
-                      // Naviguer vers HomePage
                       Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -65,6 +61,7 @@ class FeesView extends StatelessWidget {
                       );
                     }, style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blue,
+                      foregroundColor: Colors.white,
                       minimumSize: Size(double.infinity, 50),
                     ),
                     child: Text('Next'),)
